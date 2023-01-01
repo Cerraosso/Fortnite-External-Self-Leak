@@ -1334,7 +1334,7 @@ void InitCheat()
 				write<double>(DMRBuff5 + 0x26, 0.9999);//troppo veloce
 			}
 			else if (Collision) {
-				double CollisonValue = 1.000;
+				double CollisonValue = 99;
 
 				uintptr_t Collision = read<uintptr_t>(baseaddy + 0x8D05519);
 				uintptr_t CollisionBuff1 = read<uintptr_t>(Collision + 0x2F4);
@@ -1343,7 +1343,7 @@ void InitCheat()
 				write<double>(CollisionBuff2 + 0x4A4, CollisonValue); //può bloccarsi
 			}
 			else if (nobloom) {
-				if (CurrentWeapon && GetAsyncKeyState(VK_LBUTTON)) { write<float>(CurrentWeapon + 0x64, 3.402823466e+38F); }
+				if (CurrentWeapon && GetAsyncKeyState(VK_LBUTTON)) { write<float>(CurrentWeapon + 0x64, 99); }
 			}
 			else if (instareload) {
 				uintptr_t TwoPoint5Hours1 = read<uintptr_t>(CurrentWeapon + 0xc41);
